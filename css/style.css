@@ -1,0 +1,52 @@
+/* Background */
+body{
+  font: 15px/1.5 Arial, helvetica, sans-serif;
+  padding: 0;
+  margin: 0;
+  background-color: #ffffff;
+}
+
+/* Global */
+.container {
+  width: 80%;
+  margin: auto;
+  overflow: hidden;
+}
+
+/* Header */
+header{
+  background: #333;
+  color: #fff;
+}
+
+header a{
+  color: #fff;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+header ul{
+  margin: 0;
+  padding: 0;
+}
+
+header li{
+  float: left;
+  display: inline;
+  padding: 0 20px 0 20px;
+}
+
+header #title{
+  margin-top: 5px;
+  margin-bottom: 5px;
+  float: left;
+}
+
+header #title h1{
+  margin: 0;
+}
+
+header nav{
+  margin-top: 20px;
+  float: left;
+}
