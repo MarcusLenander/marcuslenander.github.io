@@ -1,22 +1,6 @@
-/* Background */
-body{
-  font: 15px/1.5 Arial, helvetica, sans-serif;
-  padding: 0;
-  margin: 0;
-  background-color: #ffffff;
-}
-
-/* Global */
-.container {
-  width: 80%;
-  margin: auto;
-  overflow: hidden;
-}
-
-/* Code Block */
 /* PrismJS 1.15.0
 https://prismjs.com/download.html#themes=prism&languages=python */
-/*
+/**
  * prism.js default theme for JavaScript, CSS and HTML
  * Based on dabblet (http://dabblet.com)
  * @author Lea Verou
@@ -24,7 +8,7 @@ https://prismjs.com/download.html#themes=prism&languages=python */
 
 code[class*="language-"],
 pre[class*="language-"] {
-  color: black;
+	color: black;
 	background: none;
 	text-shadow: 0 1px white;
 	font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
@@ -153,80 +137,4 @@ pre[class*="language-"] {
 
 .token.entity {
 	cursor: help;
-}
-
-
-/* Header */
-header{
-  background: #333;
-  color: #fff;
-}
-
-header a{
-  color: #fff;
-  text-decoration: none;
-  font-size: 16px;
-}
-
-header ul{
-  margin: 0;
-  padding: 0;
-}
-
-header li{
-  float: left;
-  display: inline;
-  padding: 0 20px 0 20px;
-}
-
-header #title{
-  margin-top: 5px;
-  margin-bottom: 5px;
-  float: left;
-}
-
-header #title h1{
-  margin: 0;
-}
-
-header nav{
-  margin-top: 20px;
-  float: left;
-}
-
-/*page cryptography*/
-.cipher-menu a {
-  color: #333;
-  text-decoration: none;
-}
-
-/* Page: index*/
-.container-1 {
-  width: 80%;
-  margin: auto;
-  margin-top: 10px;
-  overflow: hidden;
-  display: flex;
-
-  padding: 10px;
-}
-.container-1 div{
-  border: 2px #333 solid;
-  padding: 10px;
-  margin: 10px;
-}
-
-.container-1 a {
-  text-decoration: none;
-  color: #000;
-}
-
-.box1{
-  flex: 1;
-}
-.box2 {
-  flex: 1;
-}
-.box3 {
-  flex: 1;
 }

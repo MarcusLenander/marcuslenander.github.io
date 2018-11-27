@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <meta name="description" content="Blog and wiki about cryptography">
+    <meta name="keywords" content="cryptography, wiki, blog, crypto">
+    <meta name="author" content="Marcus Lenander">
+    <title>Caesar cipher </title>
+    <link href="../css/style.css" rel="stylesheet">
+  </head>
+
+  <body>
+    <header>
+      <div class="container">
+        <div id="title">
+          <h1>Crypto blog</h1>
+        </div>
+        <nav>
+          <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="#">Cryptography</a></li>
+            <li><a href="#">Code</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <script src="../javascript/prism.js"></script>
+    <div class="container">
+      <h1>Caesar cipher python code</h1>
+      <pre><code class="language-python">def encryptMessage(message, key):
+    i = 0
+    ciphertext = [0 for x in range(len(message))]
+    message = list(message.lower())
+
+    for char in message:
+        if char.islower():
+            message[i] = ord(char) - 97
+            ciphertext[i] = chr((message[i] + key) % 26 + 97)
+            i += 1
+        else:
+            ciphertext[i] = char
+            i += 1
+
+    return ''.join(ciphertext)
+
+def decryptCiphertext(ciphertext, key):
+    i = 0
+    message = [0 for x in range(len(ciphertext))]
+    ciphertext = list(ciphertext.lower())
+
+    for char in ciphertext:
+        if char.islower():
+            ciphertext[i] = ord(char) - 97
+            message[i] = chr((ciphertext[i] - key) % 26 + 97)
+            i += 1
+        else:
+            message[i] = char
+            i += 1
+
+    return ''.join(message)
+
+def main():
+    message = "HELLO WORLD";
+    key = 25
+
+    ciphertext = encryptMessage(message, key)
+    print("plaintext: " + message + "\nciphertext: " + ciphertext)
+
+    plaintext = decryptCiphertext(ciphertext, key)
+    print("ciphertext: " + ciphertext + "\nplaintext: " + plaintext)
+
+if __name__ == "__main__":
+    main()
+      </code></pre>
+    </div>
+
+
+  </body>
+</html>
