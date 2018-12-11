@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <meta name="description" content="Blog and wiki about cryptography">
+    <meta name="keywords" content="cryptography, wiki, blog, crypto">
+    <meta name="author" content="Marcus Lenander">
+    <title>Euclidean Algorithm</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML' async></script>
+  </head>
+
+  <body>
+    <header>
+      <div class="container">
+        <div id="title">
+          <h1>Crypto wiki</h1>
+        </div>
+        <nav>
+          <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../cryptography.html">Cryptography</a></li>
+            <li><a href="../code.html">Code</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <section id="main">
+      <div class="container">
+        <h1>Euclidean Algorithm</h1>
+        <p>Given two integers `a \ne 0` and `b \ne 0` the algorithm is used to calculate the greatest comon divider `\gcd(a,b)`</p>
+        <p>$$\begin{align*}
+             &a = bq_1+r_1 \\
+             &b = r_1q_2+r_2 \\
+             &r_1 = r_2q_3+r_3 \\
+             &\vdots \\
+             &r_{n-3}=r_{n-2}q_{n-1}+r_{n-1} \\
+             &r_{n-2}=r_{n-1}q_{n}+r_n \\
+             &r_{n-1}=r_nq_{n+1}
+             \end{align*}$$</p>
+        <p>`r_n` is the rest we are searching for. This is the gcd</p>
+        <p>`\gcd(a,b) = r_n`</p>
+        <p>! chain is finite</p>
+        <h2>Example</h2>
+        <p>`gcd`</p>
+
+      </div>
+    </secton>
+  </body>
+</html>
