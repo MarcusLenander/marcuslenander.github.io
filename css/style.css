@@ -12,7 +12,7 @@ body{
   width: 80%;
   margin: auto;
   overflow: hidden;
-    text-align: justify;
+  text-align: justify;
 }
 .cipher-menu a {
   color: #333;
@@ -129,11 +129,11 @@ i {
   top: 75px;
   opacity: 1;
 }
-.content h1{
+.content h1 {
   color: #fff;
   margin-bottom: 0px;
 }
-.content p{
+.content p {
   color: #fff;
   margin-top: 0px;
 }
@@ -151,4 +151,12 @@ i {
     overflow: hidden;
     border-radius: 10px;
   }
+  header #title {
+    float: none;
+    text-align: center;
+  }
+  header nav {
+    display: none;
+  }
+
 }
