@@ -135,7 +135,7 @@ i {
   .flex-container {
     flex-direction: column;
   }
-  .box {
+  .icon {
     cursor: pointer;
   }
   header #title {
