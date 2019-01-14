@@ -14,6 +14,9 @@ body{
   overflow: hidden;
   text-align: justify;
 }
+a {
+  text-decoration: none;
+}
 .cipher-menu a {
   color: #333;
   text-decoration: none;
@@ -56,28 +59,15 @@ header nav{
 /* flex container*/
 .flex-container {
   display: flex;
-  flex-flow: row wrap;
-}
-
-.flex-item{
-  border: 2px #333 solid;
-  padding: 10px;
-  margin-top: 10px;
-  margin-right: 10px;
-}
-
-.flex-container a {
-  text-decoration: none;
-  color: #333;
+  flex-direction: row;
+  justify-content: space-between!important;
 }
 
 
 /*Frontpage box*/
 .box {
   position: relative;
-  width: 330px;
   height: 230px;
-  float: left;
   margin: 15px;
   background: #474747;
   box-sizing: border-box;
@@ -138,18 +128,15 @@ i {
   margin-top: 0px;
 }
 
-/*Media Queries*/
+
+/* Media Queries */
 @media only screen and (max-width: 1024px) {
+  /* Global */
+  .flex-container {
+    flex-direction: column;
+  }
   .box {
-    position: relative;
-    width: calc(100% - 30px);
-    height: 230px;
-    float: left;
-    margin: 15px;
-    background: #474747;
-    box-sizing: border-box;
-    overflow: hidden;
-    border-radius: 10px;
+    cursor: pointer;
   }
   header #title {
     float: none;
@@ -158,5 +145,4 @@ i {
   header nav {
     display: none;
   }
-
 }
