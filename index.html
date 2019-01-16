@@ -15,17 +15,16 @@
   <body>
     <header>
       <div class="container">
-        <div id="title">
+        <div class="topnav" id="myTopnav">
           <h1>Crypto wiki</h1>
+          <a href="index.html">Home</a>
+          <a href="cryptography.html">Cryptography</a>
+          <a href="code.html">Code</a>
+          <a href="math.html">Mathematics</a>
+          <a href="javascript:void(0);" class="menuicon" onclick="menuFunction()">
+            <i class="fa fa-bars"></i>
+          </a>
         </div>
-        <nav>
-          <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="cryptography.html">Cryptography</a></li>
-            <li><a href="code.html">Code</a></li>
-            <li><a href="math.html">Mathematics</a></li>
-          </ul>
-        </nav>
       </div>
     </header>
 
@@ -62,9 +61,19 @@
             <a href="math.html"><p>Here you can find some cryptographic algorithms implemented in various programing languages</p></a>
           </div>
         </div>
-
-
       </div>
     </div>
+
+    <script>
+    function menuFunction() {
+      var x = document.getElementById("myTopnav");
+      if (x.className === "topnav") {
+        x.className += " responsive";
+      } else {
+        x.className = "topnav";
+      }
+    }
+    </script>
+
   </body>
 </html>
